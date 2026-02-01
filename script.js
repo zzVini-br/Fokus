@@ -12,7 +12,8 @@ const simboloIniciarOuPausar = document.querySelector(".app__card-primary-butto-
 const tempoNaTela = document.querySelector("#timer");
 
 const musicaFocoInput = document.querySelector("#alternar-musica");
-const musica = new Audio("/sons/luna-rise-part-one.mp1500");
+const musica = new Audio("/sons/luna-rise-part-one.mp3");
+musicaFocoInput.checked = false;
 musica.loop = true;
 
 const iniciar = new Audio("/sons/play.mp1500");
@@ -97,7 +98,7 @@ function mostrarTempo() {
 //#region Event Listener dos botoes
 
 musicaFocoInput.addEventListener("change", () => {
-  if (musica.paused) {
+  if (musicaFocoInput.checked) {
     musica.play();
   } else {
     musica.pause();
