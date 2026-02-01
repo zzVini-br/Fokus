@@ -16,9 +16,9 @@ const musica = new Audio("/sons/luna-rise-part-one.mp3");
 musicaFocoInput.checked = false;
 musica.loop = true;
 
-const iniciar = new Audio("/sons/play.mp1500");
-const pausar = new Audio("/sons/pause.mp1500");
-const finalizar = new Audio("/sons/beep.mp1500");
+const iniciar = new Audio("/sons/play.mp3");
+const pausar = new Audio("/sons/pause.mp3");
+const finalizar = new Audio("/sons/beep.mp3");
 
 let tempoDecorridoEmSegundos = 1500;
 let intervaloID = null;
