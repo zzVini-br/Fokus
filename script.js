@@ -100,6 +100,7 @@ function mostrarTempo() {
 musicaFocoInput.addEventListener("change", () => {
   if (musicaFocoInput.checked) {
     musica.play();
+    musica.volume = 0.4;
   } else {
     musica.pause();
   }
